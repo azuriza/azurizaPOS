@@ -115,7 +115,7 @@ class ProductCart extends Component
     }
 
     public function updatedGlobalTax() {
-        Cart::instance($this->cart_instance)->setGlobalTax((integer)$this->global_tax);
+        Cart::instance($this->cart_instance)->setGlobalTax((double)$this->global_tax);
     }
 
     public function updatedGlobalDiscount() {

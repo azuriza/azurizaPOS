@@ -127,7 +127,7 @@
         <div class="col-lg-4">
             <div class="form-group">
                 <label for="tax_percentage">Tax (%)</label>
-                <input wire:model.blur="global_tax" type="number" class="form-control" name="tax_percentage" min="0" max="100" value="{{ $global_tax }}" required>
+                <input wire:model.blur="global_tax" step="any" type="number" class="form-control" name="tax_percentage" min="0" max="100" value="{{ $global_tax }}" required>
             </div>
         </div>
         <div class="col-lg-4">
